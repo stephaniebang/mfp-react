@@ -2,9 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import App from './App';
+import CounterFunctional from './components/CounterFunctional';
 
-const mount = (el) => {
+const mountApp = (el) => {
   ReactDOM.render(<App />, el);
+};
+
+const mountCounterFunctional = (el) => {
+  ReactDOM.render(<CounterFunctional />, el);
 };
 
 if (process.env.NODE_ENV === 'development') {
@@ -15,4 +20,4 @@ if (process.env.NODE_ENV === 'development') {
   }
 }
 
-export { mount };
+export { mountApp, mountCounterFunctional };

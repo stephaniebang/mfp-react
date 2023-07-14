@@ -22,8 +22,9 @@ const devConfig = {
       name: 'marketing',
       filename: 'remoteEntry.js',
       exposes: {
-        './MarketingApp': './src/bootstrap',
-        './MarketingButton': './src/components/Button',
+        './mountMethods': './src/bootstrap',
+        './CounterClass': './src/components/CounterClass',
+        './CounterFunctional': './src/components/CounterFunctional',
       },
       // shared: packageJson.dependencies,
       shared: [
